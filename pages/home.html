@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+    <i class="bi bi-arrow-up-square-fill up"></i>
+
+
+  <nav class="navbar navbar-expand-lg"> 
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        My Store 
+      </a>
+      <span class="userName" style = "size: 8px !important ;color: #14cff0 ;"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active p-2 p-lg-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="search ps-3 pe-3 d-none d-lg-block">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <a class="btn rounded-pill main-btn" onclick="logout(event)" href="#">Log Out</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- slider -->
+  <section class="landing col-lg-12 col-md-6 col-sm-3">
+    <div class="slides">
+      <img class="slide" src="/images/2.jpg" alt="">
+      <img class="slide" src="/images/4.png" alt="">
+      <img class="slide" src="/images/5.png" alt="">
+    </div>
+    <div class="slider-controls">
+      <button class="prev" onclick="prevSlide()" id="prev">&#10094</button>
+      <button class="next" onclick="nextSlide()" id="next">&#10095</button>
+    </div>
+
+  </section>
+
+<!-- prodecut -->
+  <main class="container my-4">
+    <div class="text-center">
+      <h2 class="h2 my-4 text-center">Out Products</h2>
+      <button type="button" class="btn btn-primary btn-lg " data-name="all">All</button>
+      <button type="button" class="btn btn-secondary btn-lg " data-name="watches">Watches</button>
+      <button type="button" class="btn btn-secondary btn-lg " data-name="phones">Phones</button>
+      <button type="button" class="btn btn-secondary btn-lg " data-name="head">Head phones</button>
+      <button type="button" class="btn btn-secondary btn-lg " data-name="glasses">Glasses</button>
+      <button type="button" class="btn btn-secondary btn-lg " data-name="other">Other</button>
+    </div>
+
+    
+    <div class="container-fluid mt-3">
+      <div class="row row g-3 d-flex justify-content-between">
+        <div data-name="other" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/ramadan-shopping-basket-left-side.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Ramadan Cart</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(123)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">15</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="other" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/sale-with-special-discount-vr-glasses.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">VR</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(89)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">20</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="head" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/icons8-team-7LNatQYMzm4-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">HeadPhone v1</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(123)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">25</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="watches" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/pixel-bee-u8isJQ6QjF4-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Watch 3</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill  "></i>
+              </span>
+              <span class="text-muted ms-2">(123)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="head" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/c-d-x-PDX_a_82obo-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">HeadPhone s2</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(23)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="watches" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <div class="w-100 h-100">
+            <img src="/images/domino-studio-p2WUEFGrAdA-unsplash.jpg" class="card-img-top w-100" alt="Product Image">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title mb-2">Casio</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(29)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">35</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="glasses" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/claudio-schwarz-e8TtkC5xyv4-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Glass c1</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(12)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="glasses" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/giorgio-trovato-K62u25Jk6vo-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Sun Glass</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(15)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="glasses" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/sincerely-media-d05w6_7FaPM-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Glass f1</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(20)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">13</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="watches" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/jaelynn-castillo-xfNeB1stZ_0-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Watch ct4</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(97)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">65</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="head" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/luke-peterson-lUMj2Zv5HUE-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Headphone s5</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(55)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="watches" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/paul-cuoco-CO2vOhPqlrM-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Watch g5</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(43)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">55</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="phones" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Iphone 11 por max</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(26)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">420</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="head" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/luke-peterson-lUMj2Zv5HUE-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">HeadPhone y2</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(19)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">20</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="phones" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/d-c-tr-nh-1t1CBECuqvs-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Oppo a12</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(0)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">120</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="phones" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/d-c-tr-nh-1t1CBECuqvs-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Infinx note 8</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(65)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">90</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="glasses" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/oli-woodman-s7gRHGEmX78-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Glass g5</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(46)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="other" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/eniko-kis-KsLPTsYaqIQ-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Camira clasic</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(32)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">25</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-name="phones" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/annie-spratt-goholCAVTRs-unsplash.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Clasic Phone</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(26)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">20</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-name="other" class="card mt-4 col-lg-4 col-md-6 col-sm-12 p-0 shadow-sm" style="width: 18rem;">
+          <img src="/images/sale-with-special-discount-speaker.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h4 class="card-title mb-2">Sound e2</h4>
+    
+            <div class="d-flex  mb-3">
+              <span class="">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span class="text-muted ms-2">(18)</span>
+            </div>
+    
+            <div class="row align-items-center">
+              <div class="col-8">
+                <a href="product page.html" onclick = "product(event,this)" class="btn btn-primary w-100 rounded-0">More Details</a>
+              </div>
+              <div class="col-4">
+                $<span class="fw-bold text-success fs-5 price">18</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- footer -->
+  <div class="container-fluid footer">
+    <footer class="pt-5 pb-2 container">
+      <div class="row">
+        <div class="col-6 col-md-3 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-3 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+        <p>&copy; 2025 <span id="owner">Mohamed Rashad</span>. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg><i class="bi bi-twitter-x"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg><i class="bi bi-facebook"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg><i class="bi bi-github"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>

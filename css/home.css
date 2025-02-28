@@ -1,0 +1,121 @@
+/* =========================== slider ============================== */
+.landing{
+    width: 100%;
+    height: 100hv;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.landing img{
+    width: 100%;
+    height: 88vh;
+    display: none;
+    object-fit: cover;
+}
+img.displaySlide{
+    display: block;
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.landing button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(245, 242, 244);
+    border: none;
+
+}
+.landing .prev{
+    left: 0;
+}
+.landing .next{
+    right: 0;
+}
+@keyframes slideIn {
+    0% {
+        opacity: .8;
+        }
+    100% {
+            opacity: 1;
+        }
+}
+@media screen and (max-width: 1024px) {
+    .landing {
+        height: 400px;
+    }
+
+    .landing button {
+        font-size: 1.8em;
+        padding: 8px;
+    }
+    .landing img{
+        width: 480px;
+        height: 88vh;
+    }
+}
+
+/* للهواتف (Mobile) - تقليل الحجم أكثر */
+@media screen and (max-width: 768px) {
+    .landing {
+        height: 350px;
+    }
+
+    .landing button {
+        font-size: 1.5em;
+        padding: 6px;
+    }
+    .landing img{
+        width: 480px;
+        height: 88vh;
+    }
+}
+
+/* للهواتف الصغيرة جدًا */
+@media screen and (max-width: 480px) {
+    .landing {
+        height: 300px;
+    }
+
+    .landing button {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+    .landing img{
+        width: 480px;
+        height: 88vh;
+        /* object-fit:u; */
+    }
+}
+
+/* ==================================== products ====================================== */
+main img{
+    width: 100%;
+    height: 200px; 
+}
+.hide{
+    display: none;
+}
+/* ================================ up buttun ====================================== */
+.up{
+    position: fixed;
+    bottom: 50px;
+    right: -30px;
+    color: #14cff0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 30;
+    transition: 0.5s;
+    width: 20px;
+    
+    height: 20px;
+    font-size: 30px;
+}
+.up.show{
+    right: 30px;
+}
+/* ========================= user ================== */

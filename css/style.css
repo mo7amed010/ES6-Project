@@ -1,0 +1,87 @@
+:root{
+    --dark-color : #19283f;
+    --green-color : #33d1cc;
+    --red-color : #ff3150;
+    --yellow-color : white;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+    color: var(--yellow-color);
+}
+.main-title::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* ======================= nav ======================= */
+.navbar, .footer{
+    background-color: var(--dark-color);
+}
+.navbar .nav-link, .navbar .navbar-brand, footer, footer .nav-link{
+    color: #fff;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+footer .nav-link:hover,
+footer .nav-link:focus{
+    color : var(--green-color);
+}
+.search {
+    border-left: 1px solid var(--green-color);
+}
+.search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: #fff;
+    border-color: #fff;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* ============================== form ============================== */
+.bor-top{
+    border-top: 1px solid #116dfa !important;
+}
+.input-group.error input{
+    color: #ff3860;
+}
+.input-group.success input{
+    color: #09c372;
+}
+.input-group+.error, #account{
+    color:#ff3860;
+    font-size: 14px;
+    height: 13px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+/* =========================== footer =========================== */
+.link-body-emphasis{
+    color: white;
+}
+.link-body-emphasis:hover{
+    color: var(--green-color);
+}
+#owner{
+    color: var(--green-color);
+}

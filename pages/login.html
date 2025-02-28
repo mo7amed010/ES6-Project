@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg"> 
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        My Store
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+          </li>
+        </ul>
+        <a class="btn rounded-pill main-btn" href="#">Login</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-3 bg-light m-auto rounded-top bor-top">
+          <h2 class="text-center pt-3 mb-3">Login</h2>
+
+          <form action="home.html">
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa fa-lock"></i></span>
+              <input type="password" id="pass" class="form-control" placeholder="Password" aria-label="Password">
+            </div>
+
+            <div class="d-grid">
+              <div class="error text-center" id="account"></div>
+              <button class="btn btn-primary" type="submit">Login</button>
+              <p class="text-center text-capitalize mt-3">Don't have Account? <a href="signup.html">Sing up</a></p>
+            </div>
+          </form>
+        </div>
+    </div>
+  </main>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
